@@ -90,19 +90,19 @@ while running:
     for obj in good_objects[:]:
         if obj[1] + obj_height >= basket_y and basket_x < obj[0] < basket_x + basket_width:
             score += 1
-            play_sound("C:\\Users\\veda\\Music\\catch.mp3")  # Escape backslashes
+            play_sound("Paste the path of the song called cacth.mp")  # Escape backslashes
             good_objects.remove(obj)
     
     for obj in bad_objects[:]:
         if obj[1] + obj_height >= basket_y and basket_x < obj[0] < basket_x + basket_width:
             lives -= 1
-            play_sound("C:\\Users\\veda\\Music\\miss.mp3")  # Escape backslashes
+            play_sound("Paste the path of the song called miss.mp3")  # Escape backslashes
             bad_objects.remove(obj)
     
     for obj in powerups[:]:
         if obj[1] + obj_height >= basket_y and basket_x < obj[0] < basket_x + basket_width:
             lives += 1
-            play_sound("C:\\Users\\veda\\Music\\powerup.mp3")  # Escape backslashes
+            play_sound(Paste the path of the song called powerup.mp3)  # Escape backslashes
             powerups.remove(obj)
     
     # Remove off-screen objects
